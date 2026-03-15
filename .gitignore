@@ -1,0 +1,20 @@
+# Virtual Environment
+tox_env/
+venv/
+.venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data & Results
+Mod4-CT-results/
+runs/
+*.csv
+*.gz
+*.png
+
+# IDE Settings
+.vscode/
+.idea/
