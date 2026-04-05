@@ -7,7 +7,7 @@ Write-Host "--- Starting Toxicology Environment Setup ---" -ForegroundColor Cyan
 # 2. Check if Python 3.12 is installed
 $pyExe = py -$PY_VERSION -c "import sys; print(sys.executable)" 2>$null
 if ($lastExitCode -ne 0) {
-    Write-Error "Python $PY_VERSION was not found. Please install it from python.org first."
+    Write-Error "Python $PY_VERSION was not found. Install from python.org first."
     exit
 }
 
@@ -27,5 +27,5 @@ Write-Host "Installing/Updating packages..." -ForegroundColor Yellow
 Write-Host "--- Setup Complete! ---" -ForegroundColor Green
 
 # 5. Run the Model Script
-Write-Host "Launching your PyTorch model..." -ForegroundColor Cyan
+Write-Host "Launching PyTorch model..." -ForegroundColor Cyan
 & ".\$VENV_NAME\Scripts\python.exe" .\CSC580-Mod4-CT.py
